@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="img/cat.png" type="image/ico" rel="icon">
+        <title>Juego: Gato- MGCL y OVA</title>
+
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                Juego: Gato
+            </div>
+        </header>
+        <div class="row w-100 m-0">
+            <div class="col-9 m-0 p-0">
+                <div id="board" class="board">
+                    <div class="row">
+                        <div id="turnTitle"class="col-12 turnTitle">Turno: Jugador con X</div>
+                    </div>
+                    <div class="row">
+                        <div id="cell1"class="cell col-4" onclick="drawShape(1)"></div>
+                        <div id="cell2"class="cell col-4" onclick="drawShape(2)"></div>
+                        <div id="cell3"class="cell col-4" onclick="drawShape(3)"></div>
+                    </div>
+                    <div class="row">
+                        <div id="cell4"class="cell col-4" onclick="drawShape(4)"></div>
+                        <div id="cell5"class="cell col-4" onclick="drawShape(5)"></div>
+                        <div id="cell6"class="cell col-4" onclick="drawShape(6)"></div>
+                    </div>
+                    <div class="row">
+                        <div id="cell7"class="cell col-4" onclick="drawShape(7)"></div>
+                        <div id="cell8"class="cell col-4" onclick="drawShape(8)"></div>
+                        <div id="cell9"class="cell col-4" onclick="drawShape(9)"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-auto mx-0 p-0">
+                <button id="playAgain" onclick="restart()">Reiniciar</button>
+            </div>
+        </div>
+
+        <script src="js/gato.js"></script>
+        
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

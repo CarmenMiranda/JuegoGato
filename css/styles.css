@@ -1,0 +1,72 @@
+body{
+    background-color: #fde8e9;
+}
+
+header .title{
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.board{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.board .turnTitle{
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cell{
+    height: 200px;
+    border: 2px solid #000;
+    display: block;
+    font-size: 100px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.cell:hover{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+#playAgain{
+    padding: 50px;
+    font-size: 25px;
+    border: 1px solid #17a2b8;
+    background-color: #17a2b8;
+    color: #fff;
+    vertical-align: middle;
+}
+
+#playAgain:hover{
+    background-color: #1090a4;
+    border: 1px solid #1090a4;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes shake {
+    from,
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%, 30%, 50%, 70%,90% {
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    20%, 40%, 60%, 80% {
+      transform: translate3d(10px, 0, 0);
+    }
+}
+  
+.shake {
+    animation-name: shake;
+}
